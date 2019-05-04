@@ -1,0 +1,67 @@
+{
+  "name": "vue-audio-player",
+  "version": "0.0.1",
+  "private": false,
+  "description": "audio player component for Vue.js",
+  "main": "dist/vue-audio-player.common.js",
+  "unpkg": "dist/vue-audio-player.umd.min.js",
+  "jsdelivr": "dist/vue-audio-player.umd.min.js",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "rm -rf docs && vue-cli-service build --dest docs",
+    "build-bundle": "vue-cli-service build --target lib --name vue-audio-player ./src/main-bundle.js",
+    "lint": "vue-cli-service lint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yahsan2/vue-audio-player.git"
+  },
+  "keywords": [
+    "audio",
+    "player",
+    "vue"
+  ],
+  "author": "Ryosuke Miyamoto <yahsan2@gmail.com> (https://github.com/yahsan2)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yahsan2/vue-audio-player/issues"
+  },
+  "homepage": "https://github.com/yahsan2/vue-audio-player#readme",
+  "babel": {
+    "presets": [
+      "@vue/app"
+    ]
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/standard"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
