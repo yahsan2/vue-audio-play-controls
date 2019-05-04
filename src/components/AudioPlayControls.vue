@@ -2,7 +2,7 @@
 <div :style="{ '--av-height': avHeight }">
   <div class="av" ref="av" v-if="playlist">
     <!-- The canvas component with visualizations -->
-    <av-canvas
+    <ap-canvas
     :audioAnalyser="myAnalyser"
     @pauseAudio="evalAudio"
     @prevAudio="prevAudio"
