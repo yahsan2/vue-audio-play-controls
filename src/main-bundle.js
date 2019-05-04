@@ -1,12 +1,12 @@
 import Vue from 'vue'
-import AudioPlayer from './components/AudioPlayer.vue'
+import AudioPlayControls from './components/AudioPlayControls.vue'
 
 Vue.config.productionTip = false
 
-const VueAudioPlayer = {
+const VueAudioPlayControls = {
   install (Vue, params = {}) {
-    Vue.component('audio-player', AudioPlayer)
+    Vue.component('audio-player', AudioPlayControls)
   }
 }
 
-export default VueAudioPlayer
+export default VueAudioPlayControls

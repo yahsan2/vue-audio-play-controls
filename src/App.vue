@@ -3,19 +3,19 @@
     <div class="content">
       This is the main content
     </div>
-    <audio-player
+    <audio-play-controls
      avHeight="82px"
      :playlist="playlist"
      :canvas="true"
-    ></audio-player>
+    ></audio-play-controls>
   </div>
 </template>
 
 <script>
-import AudioPlayer from './components/AudioPlayer'
+import AudioPlayControls from './components/AudioPlayControls'
 
 export default {
-  components: { AudioPlayer },
+  components: { AudioPlayControls },
   data () {
     return {
       playlist: [
