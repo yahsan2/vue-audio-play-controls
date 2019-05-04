@@ -78,7 +78,7 @@ import * as Utils from '../utils/utils.js'
 import Vue from 'vue'
 export default {
   name: 'AudioVisualizer',
-  mounted: function () {
+  mounted () {
     this.myAudioPlayer = this.$refs.myAudio
     this.volume.volumeBar = this.$refs.volumeBar
     this.volume.volumeLeft = this.$refs.volumeLeft
