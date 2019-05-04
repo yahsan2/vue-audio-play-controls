@@ -8,7 +8,7 @@
   "jsdelivr": "dist/vue-audio-player.umd.min.js",
   "scripts": {
     "dev": "vue-cli-service serve",
-    "build": "rm -rf docs && vue-cli-service build --dest docs",
+    "build": "vue-cli-service build --dest docs",
     "build-bundle": "vue-cli-service build --target lib --name vue-audio-player ./src/main-bundle.js",
     "lint": "vue-cli-service lint",
     "test": "echo \"Error: no test specified\" && exit 1",

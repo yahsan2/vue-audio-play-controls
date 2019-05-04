@@ -6,7 +6,7 @@ A Better Media Player for Vue. Built in UI and Audio Visualizer.
 
 <!-- # Demo -->
 
-[Demo](http://vue-visualizer.firebaseapp.com)
+[Demo](https://vue-audio-player.netlify.com/)
 
 # Installation
 
