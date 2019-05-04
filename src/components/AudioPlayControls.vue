@@ -17,7 +17,7 @@
       <!-- Audio meta data about the current Audio -->
       <div class="av__audio__meta">
         <div class="av__audio__meta__img">
-          <img :src="computedPlaylist[currentAudio].AudioImg" alt="">
+          <img :src="computedPlaylist[currentAudio].audioImg" alt="">
         </div>
         <div class="av__audio__meta__tags">
           <span class="av__audio__meta__tags__title">{{computedPlaylist[currentAudio].audioName}}</span>
@@ -113,10 +113,10 @@ export default {
         showVis: false
       },
       audioControls: {
-        AudioPercent: 0,
-        AudioTime: '',
-        AudioDuration: '',
-        AudioPaused: true
+        audioPercent: 0,
+        audioTime: '',
+        audioDuration: '',
+        audioPaused: true
       },
       volume: {
         volumeBar: null,
@@ -149,7 +149,7 @@ export default {
         this.currentAudio = AudioIndex
         this.myAudioPlayer.currentTime = 0
         this.playAudio()
-      } else if (this.currentAudio === AudioIndex && this.audioControls.AudioPaused) {
+      } else if (this.currentAudio === AudioIndex && this.audioControls.audioPaused) {
         this.playAudio()
       } else {
         this.pauseAudio()
@@ -158,14 +158,14 @@ export default {
     playAudio () {
       setTimeout(function () {
         this.myAudioPlayer.play()
-        this.audioControls.AudioPaused = false
+        this.audioControls.audioPaused = false
         Vue.set(this.playlist[this.currentAudio], 'isPlaying', true)
       }.bind(this), 150)
     },
     pauseAudio () {
       setTimeout(function () {
         this.myAudioPlayer.pause()
-        this.audioControls.AudioPaused = true
+        this.audioControls.audioPaused = true
         Vue.set(this.playlist[this.currentAudio], 'isPlaying', false)
       }.bind(this), 150)
     },
@@ -233,11 +233,11 @@ export default {
       var currentDuration = this.myAudioPlayer.duration
       var percent = (currentTime / currentDuration)
       if (isNaN(percent)) {
-        this.audioControls.AudioPercent = 0
+        this.audioControls.audioPercent = 0
       } else {
-        this.audioControls.AudioPercent = percent
-        this.audioControls.AudioTime = Math.floor(currentTime.toFixed(0) / 60) + ':' + (currentTime.toFixed(0) % 60 ? Utils.minTwoDigits((currentTime.toFixed(0) % 60)) : '00')
-        this.audioControls.AudioDuration = Math.floor(currentDuration.toFixed(0) / 60) + ':' + (currentDuration.toFixed(0) % 60 ? Utils.minTwoDigits(currentDuration.toFixed(0) % 60) : '00')
+        this.audioControls.audioPercent = percent
+        this.audioControls.audioTime = Math.floor(currentTime.toFixed(0) / 60) + ':' + (currentTime.toFixed(0) % 60 ? Utils.minTwoDigits((currentTime.toFixed(0) % 60)) : '00')
+        this.audioControls.audioDuration = Math.floor(currentDuration.toFixed(0) / 60) + ':' + (currentDuration.toFixed(0) % 60 ? Utils.minTwoDigits(currentDuration.toFixed(0) % 60) : '00')
       }
     },
     handleAudioEnd () {
