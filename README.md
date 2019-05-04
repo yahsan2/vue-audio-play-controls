@@ -1,4 +1,4 @@
-# vue-audio-visualizer
+# vue-audio-play-controls
 
 A Better Media Player for Vue. Built in UI and Audio Visualizer.
 
@@ -6,7 +6,7 @@ A Better Media Player for Vue. Built in UI and Audio Visualizer.
 
 <!-- # Demo -->
 
-[Demo](https://vue-audio-player.netlify.com/)
+[Demo](https://vue-audio-play-controls.netlify.com/)
 
 # Installation
 
@@ -14,8 +14,8 @@ A Better Media Player for Vue. Built in UI and Audio Visualizer.
 ## NPM or Yarn (recommended)
 
 ```shell
-$ npm install --save vue-audio-visualizer
-$ yarn add vue-audio-visualizer
+$ npm install --save vue-audio-play-controls
+$ yarn add vue-audio-play-controls
 ```
 
 ### In your project
@@ -24,8 +24,8 @@ After installing via Yarn or NPM, use the following snippet in the script portio
 
 ```js
 import Vue from 'vue'
-import VueAudioVisualizer from 'vue-audio-visualizer'
-Vue.use(VueAudioVisualizer)
+import VueAudioPlayControls from 'vue-audio-play-controls'
+Vue.use(VueAudioPlayControls)
 ...
 ```
 
@@ -46,9 +46,9 @@ Vue.use(VueAudioVisualizer)
   </div>
 </body>
 <script src="path/to/vue.js"></script>
-<script src="path/to/vue-audio-visualizer.js"></script>
+<script src="path/to/vue-audio-play-controls.js"></script>
 <script>
-    Vue.use(VueAudioVisualizer);
+    Vue.use(VueAudioPlayControls);
     var vm = new Vue({
         el: "body"
     });

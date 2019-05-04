@@ -1,15 +1,15 @@
 {
-  "name": "vue-audio-player",
-  "version": "0.0.1",
+  "name": "vue-audio-play-controls",
+  "version": "0.1.0",
   "private": false,
   "description": "audio player component for Vue.js",
-  "main": "dist/vue-audio-player.common.js",
-  "unpkg": "dist/vue-audio-player.umd.min.js",
-  "jsdelivr": "dist/vue-audio-player.umd.min.js",
+  "main": "dist/vue-audio-play-controls.common.js",
+  "unpkg": "dist/vue-audio-play-controls.umd.min.js",
+  "jsdelivr": "dist/vue-audio-play-controls.umd.min.js",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build --dest docs",
-    "build-bundle": "vue-cli-service build --target lib --name vue-audio-player ./src/main-bundle.js",
+    "build-bundle": "vue-cli-service build --target lib --name vue-audio-play-controls ./src/main-bundle.js",
     "lint": "vue-cli-service lint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint"
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/yahsan2/vue-audio-player.git"
+    "url": "git+ssh://git@github.com/yahsan2/vue-audio-play-controls.git"
   },
   "keywords": [
     "audio",
@@ -39,9 +39,9 @@
   "author": "Ryosuke Miyamoto <yahsan2@gmail.com> (https://github.com/yahsan2)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yahsan2/vue-audio-player/issues"
+    "url": "https://github.com/yahsan2/vue-audio-play-controls/issues"
   },
-  "homepage": "https://github.com/yahsan2/vue-audio-player#readme",
+  "homepage": "https://github.com/yahsan2/vue-audio-play-controls#readme",
   "babel": {
     "presets": [
       "@vue/app"
