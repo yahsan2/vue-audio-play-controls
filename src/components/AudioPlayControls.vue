@@ -9,7 +9,7 @@
     @nextAudio="nextAudio"
     @lowerVolume="lowerVolume"
     @raiseVolume="raiseVolume"
-    v-if="isShowing.showVis"/>
+    v-if="window && isShowing.showVis"/>
 
     <!-- Wrapper for the audio player bottom of the page -->
     <div class="av__audio">
