@@ -268,7 +268,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import url('../../node_modules/font-awesome/css/font-awesome.min.css');
 * {
   box-sizing: border-box;
