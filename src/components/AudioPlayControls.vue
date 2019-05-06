@@ -77,7 +77,7 @@ import AudioPlaylist from './AudioPlaylist'
 import * as Utils from '../utils/utils.js'
 import Vue from 'vue'
 export default {
-  name: 'AudioVisualizer',
+  name: 'AudioPlayControls',
   mounted () {
     this.myAudioPlayer = this.$refs.myAudio
     this.volume.volumeBar = this.$refs.volumeBar
