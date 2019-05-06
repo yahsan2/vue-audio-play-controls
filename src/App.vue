@@ -21,14 +21,14 @@ export default {
       playlist: [
         {
           audioName: 'Agnes',
-          audioSrc: 'static/agnes.mp3',
+          audioSrc: 'http://feeds.soundcloud.com/stream/610280910-dongurifm-382a.mp3',
           authorName: 'Glass Animals',
           audioImg: 'https://pbs.twimg.com/profile_images/765322021060354048/0ppD4P6Y_400x400.jpg',
           audioDuration: '3:55'
         },
         {
           audioName: 'TaKillya (Baby Driver Soundtrack)',
-          audioSrc: 'static/takillya.mp3',
+          audioSrc: 'https://storage.googleapis.com/noracast/20.mp3',
           authorName: 'Vinnie Maniscalco',
           audioImg: 'https://adamology.net/wp-content/uploads/2017/07/Baby-Driver.jpg',
           audioDuration: '3:46'

@@ -9,7 +9,7 @@
     @nextAudio="nextAudio"
     @lowerVolume="lowerVolume"
     @raiseVolume="raiseVolume"
-    v-if="window && isShowing.showVis"/>
+    v-if="isShowing.showVis"/>
 
     <!-- Wrapper for the audio player bottom of the page -->
     <div class="av__audio">
@@ -58,6 +58,7 @@
       :src="computedPlaylist[currentAudio].audioSrc"
       type="audio/mp3"
       ref="myAudio"
+      controls
       @timeupdate='onTimeUpdateListener'
       @ended="handleAudioEnd"></audio>
     </div>
@@ -257,8 +258,8 @@ export default {
     setAnalyser: function () {
       const ctx = new AudioContext()
       const src = ctx.createMediaElementSource(this.myAudioPlayer)
-      ctx.crossOrigin = 'anonymous'
-      this.myAudioPlayer.crossOrigin = 'anonymous'
+      // ctx.crossOrigin = 'anonymous'
+      // this.myAudioPlayer.crossOrigin = 'anonymous'
       this.myAnalyser = ctx.createAnalyser()
       src.connect(this.myAnalyser)
       this.myAnalyser.fftSize = 32768
