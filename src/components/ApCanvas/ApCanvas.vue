@@ -19,7 +19,7 @@ export default {
   components: { CanvasSettings },
   props: {
     audioAnalyser: {
-      type: AnalyserNode,
+      type: Object,
       default: null
     }
   },
