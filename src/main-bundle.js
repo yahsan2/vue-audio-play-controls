@@ -5,7 +5,7 @@ Vue.config.productionTip = false
 
 const VueAudioPlayControls = {
   install (Vue, params = {}) {
-    Vue.component('audio-player', AudioPlayControls)
+    Vue.component('audio-play-controls', AudioPlayControls)
   }
 }
 
