@@ -7,6 +7,7 @@
      avHeight="82px"
      :playlist="playlist"
      :canvas="true"
+     class="audio-play-controls"
     ></audio-play-controls>
   </div>
 </template>
@@ -53,6 +54,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+.audio-play-controls{
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+}
+
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 </style>

@@ -58,7 +58,6 @@
       :src="computedPlaylist[currentAudio].audioSrc"
       type="audio/mp3"
       ref="myAudio"
-      controls
       @timeupdate='onTimeUpdateListener'
       @ended="handleAudioEnd"></audio>
     </div>
@@ -281,16 +280,14 @@ body {
 }
 
 .av {
-  width: 100vw;
-  position: fixed;
+  width: 100%;
+  position: relative;
   bottom: 0;
   color: white;
   user-select: none;
 
   &__audio {
     width: 100%;
-    position: absolute;
-    bottom: 0;
     height: var(--av-height);
     background: #282828;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
