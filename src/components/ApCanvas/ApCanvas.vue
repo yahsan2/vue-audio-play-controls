@@ -15,11 +15,11 @@
 <script>
 import CanvasSettings from './CanvasSettings'
 export default {
-  name: 'AvCanvas',
+  name: 'ApCanvas',
   components: { CanvasSettings },
   props: {
     audioAnalyser: {
-      type: Object,
+      type: AnalyserNode,
       default: null
     }
   },

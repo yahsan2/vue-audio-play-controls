@@ -9,7 +9,7 @@
     @nextAudio="nextAudio"
     @lowerVolume="lowerVolume"
     @raiseVolume="raiseVolume"
-    v-if="isShowing.showVis"/>
+    v-if="myAnalyser && isShowing.showVis"/>
 
     <!-- Wrapper for the audio player bottom of the page -->
     <div class="av__audio">
@@ -50,7 +50,7 @@
           <i class="fa fa-volume-up" @mouseover="togglers.showVolumeSlider=true" @mouseout="togglers.showVolumeSlider=false" aria-hidden="true"></i>
         </div>
         <i class="fa fa-list-ol" :class="{'active-fa': isShowing.playlist}" aria-hidden="true" @click="isShowing.playlist = !isShowing.playlist"></i>
-        <i @click="showCanvas" v-if="canvas" :class="{'active-fa': isShowing.showVis}" class="fa fa-signal" aria-hidden="true"></i>
+        <i @click="showCanvas" v-if="myAnalyser && canvas" :class="{'active-fa': isShowing.showVis}" class="fa fa-signal" aria-hidden="true"></i>
       </div>
 
       <!-- HTML5 Audio -->
