@@ -4,10 +4,10 @@
       This is the main content
     </div>
     <audio-play-controls
-     avHeight="82px"
-     :playlist="playlist"
-     :canvas="true"
-     class="audio-play-controls"
+      avHeight="82px"
+      :playlist="playlist"
+      :canvas="true"
+      class="audio-play-controls"
     ></audio-play-controls>
   </div>
 </template>
