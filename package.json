@@ -1,6 +1,6 @@
 {
   "name": "vue-audio-play-controls",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "private": false,
   "description": "audio play controls component for Vue.js",
   "main": "dist/vue-audio-play-controls.common.js",
