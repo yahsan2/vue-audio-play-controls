@@ -83,7 +83,7 @@ export default {
     this.myAudioPlayer = this.$refs.myAudio
     this.volume.volumeBar = this.$refs.volumeBar
     this.volume.volumeLeft = this.$refs.volumeLeft
-    this.setAnalyser()
+    // this.setAnalyser()
     this.updateVolumeBar()
   },
   props: {
