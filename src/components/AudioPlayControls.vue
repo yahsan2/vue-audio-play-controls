@@ -76,7 +76,7 @@ import ApCanvas from './ApCanvas/ApCanvas'
 import AudioControls from './AudioControls'
 import AudioPlaylist from './AudioPlaylist'
 import * as Utils from '../utils/utils.js'
-import Vue from 'vue'
+
 export default {
   name: 'AudioPlayControls',
   mounted () {
@@ -146,7 +146,7 @@ export default {
     },
     chooseAudio (AudioIndex) {
       if (this.currentAudio !== AudioIndex) {
-        Vue.set(this.playlist[this.currentAudio], 'isPlaying', false)
+        this.$set(this.playlist[this.currentAudio], 'isPlaying', false)
         this.currentAudio = AudioIndex
         this.myAudioPlayer.currentTime = 0
         this.playAudio()
@@ -160,27 +160,27 @@ export default {
       setTimeout(function () {
         this.myAudioPlayer.play()
         this.audioControls.audioPaused = false
-        Vue.set(this.playlist[this.currentAudio], 'isPlaying', true)
+        this.$set(this.playlist[this.currentAudio], 'isPlaying', true)
       }.bind(this), 150)
     },
     pauseAudio () {
       setTimeout(function () {
         this.myAudioPlayer.pause()
         this.audioControls.audioPaused = true
-        Vue.set(this.playlist[this.currentAudio], 'isPlaying', false)
+        this.$set(this.playlist[this.currentAudio], 'isPlaying', false)
       }.bind(this), 150)
     },
     nextAudio () {
-      Vue.set(this.playlist[this.currentAudio], 'isPlaying', false)
+      this.$set(this.playlist[this.currentAudio], 'isPlaying', false)
       this.currentAudio = (this.currentAudio + 1) % this.playlist.length
       this.myAudioPlayer.currentTime = 0
       this.playAudio()
     },
     prevAudio () {
       if (this.myAudioPlayer.currentTime < 2) {
-        Vue.set(this.playlist[this.currentAudio], 'isPlaying', false)
+        this.$set(this.playlist[this.currentAudio], 'isPlaying', false)
         this.currentAudio = Utils.mod(this.currentAudio - 1, this.playlist.length)
-        Vue.set(this.playlist[this.currentAudio], 'isPlaying', false)
+        this.$set(this.playlist[this.currentAudio], 'isPlaying', false)
       }
       this.myAudioPlayer.currentTime = 0
       this.playAudio()
