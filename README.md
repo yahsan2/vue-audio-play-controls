@@ -1,8 +1,8 @@
 # vue-audio-play-controls
 
-A Better Media Player for Vue. Built in UI and Audio Visualizer.
+A Better Media Player for Vue.
 
-## This project is still under heavy development and the following installation instructions may not work. Open an issue with suggestions or send a pull request if you are able to get the instructions to work.
+This package is folked by [danstans/vue-audio-visualizer](https://github.com/danstans/vue-audio-visualizer)
 
 <!-- # Demo -->
 
@@ -24,14 +24,14 @@ After installing via Yarn or NPM, use the following snippet in the script portio
 
 ```js
 import Vue from 'vue'
-import VueAudioPlayControls from 'vue-audio-play-controls'
-Vue.use(VueAudioPlayControls)
+import AudioPlayControls from 'vue-audio-play-controls'
+Vue.use(AudioPlayControls)
 ...
 ```
 
 ### Browser globals
 
-> The **dist** folder contains `vue-audio-visualizer.js`.
+> The **dist** folder contains `vue-audio-play-controls.js`.
 
 ```html
 <body>
@@ -39,16 +39,16 @@ Vue.use(VueAudioPlayControls)
     <div class="content">
       This is where you put the rest of your site
     </div>
-    <audio-visualizer
+    <audio-play-controls
       avHeight="82px"
       :playlist="playlist"
-    ></audio-visualizer>
+    ></audio-play-controls>
   </div>
 </body>
 <script src="path/to/vue.js"></script>
 <script src="path/to/vue-audio-play-controls.js"></script>
 <script>
-    Vue.use(VueAudioPlayControls);
+    Vue.use(AudioPlayControls);
     var vm = new Vue({
         el: "body"
     });
@@ -62,11 +62,11 @@ Vue.use(VueAudioPlayControls)
     <div class="content">
       This is where you put the rest of your site
     </div>
-    <audio-visualizer
+    <audio-play-controls
      avHeight="82px"
      :playlist="playlist"
      :canvas="true"
-    ></audio-visualizer>
+    ></audio-play-controls>
   </div>
 </template>
 
