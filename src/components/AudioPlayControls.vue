@@ -58,6 +58,7 @@
       :src="computedPlaylist[currentAudio].audioSrc"
       type="audio/mp3"
       ref="myAudio"
+      v-on="$listeners"
       @timeupdate='onTimeUpdateListener'
       @ended="handleAudioEnd"></audio>
     </div>
